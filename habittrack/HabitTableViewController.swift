@@ -44,6 +44,7 @@ class HabitTableViewController: UITableViewController {
     }
 
     
+    // Populates the rows in table view with cells, as far as I understand it
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // TableViewCells are reused and should be dequeued using a cell identifier
