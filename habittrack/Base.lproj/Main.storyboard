@@ -26,7 +26,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unknownPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="7Aj-Sk-Ndk">
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unknownPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="7Aj-Sk-Ndk">
                                             <rect key="frame" x="8" y="8" width="74" height="74"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <gestureRecognizers/>

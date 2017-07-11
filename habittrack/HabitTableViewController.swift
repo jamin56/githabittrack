@@ -18,6 +18,12 @@ class HabitTableViewController: UITableViewController {
         
         // Load sample data
         loadSampleHabits()
+        
+        // Initialize tap gesture recognizer
+        // var recognizer = UITapGestureRecognizer(target: self, action: #selector(HabitTableViewController.tapEdit(_:)))
+        var recognizer = UITapGestureRecognizer(target: self, action: #selector(tapEdit(recognizer:)))
+        // Add gesture recognizer to the view
+        self.tableView.addGestureRecognizer(recognizer)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -128,6 +134,21 @@ class HabitTableViewController: UITableViewController {
         
         habits += [habit1, habit2, habit3]
         
+    }
+    
+    // instead of recognizer should this be sender?
+    //action method for gesture recognizer
+    func tapEdit(recognizer: UITapGestureRecognizer) {
+        if recognizer.state == UIGestureRecognizerState.ended {
+            //I'll trie UIView first, I think it needs to be the image view
+            let tapLocation = recognizer.location(in: self.tableView)
+            if let tapIndexPath = self.tableView.indexPathForRow(at: tapLocation) {
+                if let tappedCell = self.tableView.cellForRow(at: tapIndexPath) as? HabitTableViewCell {
+                    print("We did it")
+                    
+                }
+            }
+        }
     }
 
 }
