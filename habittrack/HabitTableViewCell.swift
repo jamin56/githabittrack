@@ -13,7 +13,9 @@ class HabitTableViewCell: UITableViewCell {
     // MARK: Properties
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var goalLabel: UILabel!
-    @IBOutlet weak var statusPhoto: UIImageView!
+    
+
+
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -19,11 +19,10 @@ class HabitTableViewController: UITableViewController {
         // Load sample data
         loadSampleHabits()
         
-        // Initialize tap gesture recognizer
-        // var recognizer = UITapGestureRecognizer(target: self, action: #selector(HabitTableViewController.tapEdit(_:)))
-        var recognizer = UITapGestureRecognizer(target: self, action: #selector(tapEdit(recognizer:)))
-        // Add gesture recognizer to the view
-        self.tableView.addGestureRecognizer(recognizer)
+        //Initialize tap gesture recognizer
+        //let recognizer = UITapGestureRecognizer(target: self, action: #selector(tapEdit(recognizer:)))
+        // add gesture recognizer to the view
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -52,6 +51,7 @@ class HabitTableViewController: UITableViewController {
     
     // Populates the rows in table view with cells, as far as I understand it
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
         
         // TableViewCells are reused and should be dequeued using a cell identifier
         let cellIdentifier = "HabitTableViewCell"
@@ -67,7 +67,12 @@ class HabitTableViewController: UITableViewController {
         // This is bad and I should remove it
         cell.goalLabel.text = "Current Streak: "
         
-
+        // Adding a tap recognizer to a UI Image
+        //let recognizer = UITapGestureRecognizer(target: self, action: #selector(tapEdit(recognizer:)))
+        // cell.statusPhoto.addGestureRecognizer(recognizer)
+        // cell.statusPhoto.isUserInteractionEnabled = true
+        
+        
         return cell
     }
     
@@ -136,19 +141,22 @@ class HabitTableViewController: UITableViewController {
         
     }
     
-    // instead of recognizer should this be sender?
+
     //action method for gesture recognizer
     func tapEdit(recognizer: UITapGestureRecognizer) {
-        if recognizer.state == UIGestureRecognizerState.ended {
-            //I'll trie UIView first, I think it needs to be the image view
-            let tapLocation = recognizer.location(in: self.tableView)
-            if let tapIndexPath = self.tableView.indexPathForRow(at: tapLocation) {
-                if let tappedCell = self.tableView.cellForRow(at: tapIndexPath) as? HabitTableViewCell {
-                    print("We did it")
+        /*
+        // if recognizer.state == UIGestureRecognizerState.ended {
+        let tapLocation = recognizer.location(in: self.tableView)
+        if let tapIndexPath = self.tableView.indexPathForRow(at: tapLocation) {
+            if let tappedCell = self.tableView.cellForRow(at: tapIndexPath) as? HabitTableViewCell {
+                print("Row Selected")
                     
-                }
             }
         }
+        }
+        */
+        print("Row Selected")
+        
     }
 
 }
