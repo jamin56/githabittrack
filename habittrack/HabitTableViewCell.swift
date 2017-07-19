@@ -13,9 +13,8 @@ class HabitTableViewCell: UITableViewCell {
     // MARK: Properties
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var goalLabel: UILabel!
+    @IBOutlet weak var statusButton: UIButton!
     
-
-
 
     override func awakeFromNib() {
         super.awakeFromNib()

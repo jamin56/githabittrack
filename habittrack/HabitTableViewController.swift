@@ -67,11 +67,9 @@ class HabitTableViewController: UITableViewController {
         // This is bad and I should remove it
         cell.goalLabel.text = "Current Streak: "
         
-        // Adding a tap recognizer to a UI Image
-        //let recognizer = UITapGestureRecognizer(target: self, action: #selector(tapEdit(recognizer:)))
-        // cell.statusPhoto.addGestureRecognizer(recognizer)
-        // cell.statusPhoto.isUserInteractionEnabled = true
-        
+        let btnImage = UIImage(named: "successPhoto")
+        cell.statusButton.setImage(btnImage, for: UIControlState.normal)
+        // cell.statusButton.imageView?.contentMode = .scaleAspectFit
         
         return cell
     }
