@@ -67,9 +67,9 @@ class HabitTableViewController: UITableViewController {
         // This is bad and I should remove it
         cell.goalLabel.text = "Current Streak: "
         
-        let btnImage = UIImage(named: "successPhoto")
-        cell.statusButton.setImage(btnImage, for: UIControlState.normal)
-        // cell.statusButton.imageView?.contentMode = .scaleAspectFit
+        let btnImage = UIImage(named: "unknownPhoto")
+        cell.statusButton.setBackgroundImage(btnImage, for: UIControlState.normal)
+        
         
         return cell
     }

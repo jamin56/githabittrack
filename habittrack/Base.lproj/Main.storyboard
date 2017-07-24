@@ -40,7 +40,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHQ-Ip-Rww">
+                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHQ-Ip-Rww">
                                             <rect key="frame" x="8" y="8" width="74" height="74"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="74" id="GJx-x5-CfL"/>
@@ -48,6 +48,10 @@
                                             </constraints>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="EHQ-Ip-Rww" firstAttribute="leading" secondItem="2ZR-qM-dIc" secondAttribute="leading" constant="8" id="FBH-0Q-sAN"/>
+                                        <constraint firstItem="EHQ-Ip-Rww" firstAttribute="top" secondItem="2ZR-qM-dIc" secondAttribute="top" constant="8" id="Z71-pX-i0k"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="goalLabel" destination="3f9-tY-lHC" id="uo8-9I-rKd"/>
