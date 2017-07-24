@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MealViewController.swift
 //  habittrack
 //
 //  Created by Ben Gibson on 7/7/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class HabitViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Properties
     // You only need to create outlets for things you are modifying so no button

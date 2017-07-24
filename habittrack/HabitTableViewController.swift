@@ -19,10 +19,6 @@ class HabitTableViewController: UITableViewController {
         // Load sample data
         loadSampleHabits()
         
-        //Initialize tap gesture recognizer
-        //let recognizer = UITapGestureRecognizer(target: self, action: #selector(tapEdit(recognizer:)))
-        // add gesture recognizer to the view
-        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -51,7 +47,6 @@ class HabitTableViewController: UITableViewController {
     
     // Populates the rows in table view with cells, as far as I understand it
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
         
         // TableViewCells are reused and should be dequeued using a cell identifier
         let cellIdentifier = "HabitTableViewCell"
@@ -62,11 +57,12 @@ class HabitTableViewController: UITableViewController {
         
         // Fetches the appropriate meal for the data source layout
         let habit = habits[indexPath.row]
-
+        
+        // Set Label text in cells
         cell.nameLabel.text = habit.name
-        // This is bad and I should remove it
         cell.goalLabel.text = "Current Streak: "
         
+        // Set button image
         let btnImage = UIImage(named: "unknownPhoto")
         cell.statusButton.setBackgroundImage(btnImage, for: UIControlState.normal)
         

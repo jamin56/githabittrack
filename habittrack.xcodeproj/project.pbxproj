@@ -11,7 +11,7 @@
 		CD7EA52B1F110EF300B3F013 /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EA52A1F110EF300B3F013 /* HabitTableViewCell.swift */; };
 		CD7EA52D1F111E7A00B3F013 /* HabitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EA52C1F111E7A00B3F013 /* HabitTableViewController.swift */; };
 		CDC4929E1F0E9CFE00C2E9F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4929D1F0E9CFE00C2E9F2 /* AppDelegate.swift */; };
-		CDC492A01F0E9CFE00C2E9F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4929F1F0E9CFE00C2E9F2 /* ViewController.swift */; };
+		CDC492A01F0E9CFE00C2E9F2 /* HabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4929F1F0E9CFE00C2E9F2 /* HabitViewController.swift */; };
 		CDC492A31F0E9CFE00C2E9F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC492A11F0E9CFE00C2E9F2 /* Main.storyboard */; };
 		CDC492A51F0E9CFE00C2E9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC492A41F0E9CFE00C2E9F2 /* Assets.xcassets */; };
 		CDC492A81F0E9CFE00C2E9F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC492A61F0E9CFE00C2E9F2 /* LaunchScreen.storyboard */; };
@@ -34,7 +34,7 @@
 		CD7EA52C1F111E7A00B3F013 /* HabitTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitTableViewController.swift; sourceTree = "<group>"; };
 		CDC4929A1F0E9CFE00C2E9F2 /* habittrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habittrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC4929D1F0E9CFE00C2E9F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDC4929F1F0E9CFE00C2E9F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDC4929F1F0E9CFE00C2E9F2 /* HabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewController.swift; sourceTree = "<group>"; };
 		CDC492A21F0E9CFE00C2E9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDC492A41F0E9CFE00C2E9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC492A71F0E9CFE00C2E9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				CDC4929D1F0E9CFE00C2E9F2 /* AppDelegate.swift */,
-				CDC4929F1F0E9CFE00C2E9F2 /* ViewController.swift */,
+				CDC4929F1F0E9CFE00C2E9F2 /* HabitViewController.swift */,
 				CDC492A11F0E9CFE00C2E9F2 /* Main.storyboard */,
 				CD7EA52C1F111E7A00B3F013 /* HabitTableViewController.swift */,
 				CD7EA52A1F110EF300B3F013 /* HabitTableViewCell.swift */,
@@ -211,7 +211,7 @@
 			files = (
 				CD2F95471F0FCCD800A27A05 /* Habit.swift in Sources */,
 				CD7EA52D1F111E7A00B3F013 /* HabitTableViewController.swift in Sources */,
-				CDC492A01F0E9CFE00C2E9F2 /* ViewController.swift in Sources */,
+				CDC492A01F0E9CFE00C2E9F2 /* HabitViewController.swift in Sources */,
 				CD7EA52B1F110EF300B3F013 /* HabitTableViewCell.swift in Sources */,
 				CDC4929E1F0E9CFE00C2E9F2 /* AppDelegate.swift in Sources */,
 			);
