@@ -66,6 +66,9 @@ class HabitTableViewController: UITableViewController {
         let btnImage = UIImage(named: "unknownPhoto")
         cell.statusButton.setBackgroundImage(btnImage, for: UIControlState.normal)
         
+        // Button Functionality
+        cell.statusButton.addTarget(self, action: #selector(statusButtonTapped), for: UIControlEvents.touchUpInside)
+        
         
         return cell
     }
@@ -135,22 +138,10 @@ class HabitTableViewController: UITableViewController {
         
     }
     
-
-    //action method for gesture recognizer
-    func tapEdit(recognizer: UITapGestureRecognizer) {
-        /*
-        // if recognizer.state == UIGestureRecognizerState.ended {
-        let tapLocation = recognizer.location(in: self.tableView)
-        if let tapIndexPath = self.tableView.indexPathForRow(at: tapLocation) {
-            if let tappedCell = self.tableView.cellForRow(at: tapIndexPath) as? HabitTableViewCell {
-                print("Row Selected")
-                    
-            }
-        }
-        }
-        */
-        print("Row Selected")
-        
+    //MARK: Actions
+    
+    func statusButtonTapped() {
+        print("status button tapped")
     }
-
+    
 }

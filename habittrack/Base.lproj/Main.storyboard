@@ -57,6 +57,7 @@
                                     <outlet property="goalLabel" destination="3f9-tY-lHC" id="uo8-9I-rKd"/>
                                     <outlet property="nameLabel" destination="yFr-Pz-6xC" id="RgX-g2-y8l"/>
                                     <outlet property="statusButton" destination="EHQ-Ip-Rww" id="yJR-Ql-WhC"/>
+                                    <segue destination="z1K-H8-Ava" kind="show" identifier="ShowDetail" id="VlA-Mx-G9U"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -121,6 +122,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LAu-HG-Sj4">
+            <objects>
+                <viewController id="z1K-H8-Ava" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CgJ-5E-F1y"/>
+                        <viewControllerLayoutGuide type="bottom" id="QN5-p7-hVf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OBz-2Z-Lz7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0yr-hb-AIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="923"/>
         </scene>
     </scenes>
 </document>
