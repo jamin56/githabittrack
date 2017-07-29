@@ -12,6 +12,7 @@ class Habit {
     
     // MARK: Properties
     var name: String
+    let isSuccess = false
     
     // MARK: Initialization
     

@@ -12,6 +12,8 @@ class HabitTableViewController: UITableViewController {
     
     // MARK: Properties
     var habits = [Habit]()
+    
+    var status = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,10 +66,17 @@ class HabitTableViewController: UITableViewController {
         
         // Set button image
         let btnImage = UIImage(named: "unknownPhoto")
-        cell.statusButton.setBackgroundImage(btnImage, for: UIControlState.normal)
+        let successImage = UIImage(named: "successPhoto")
+        cell.statusButton.setImage(btnImage, for: UIControlState.normal)
+        cell.statusButton.setImage(successImage, for: UIControlState.selected)
         
-        // Button Functionality
+        // tag to identify row number, used in button function
+        cell.statusButton.tag = indexPath.row
+        
+        
+        // Add Functionality to button
         cell.statusButton.addTarget(self, action: #selector(statusButtonTapped), for: UIControlEvents.touchUpInside)
+        
         
         
         return cell
@@ -140,8 +149,14 @@ class HabitTableViewController: UITableViewController {
     
     //MARK: Actions
     
-    func statusButtonTapped() {
-        print("status button tapped")
+    func statusButtonTapped(sender: UIButton) {
+        
+        let buttonRow = sender.tag
+        print(buttonRow, "button tapped")
+        
+        // Update button state
+        sender.isSelected = true
+        
     }
     
 }
